@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	happy_hour_2022
+	happy_hour_2022-1
 	About: A shiny new Blocs website.
 	Author: marty
 	Version: 1.0
@@ -142,6 +142,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset-md{
 	margin-top:50px;
 }
+.voffset-lg{
+	margin-top:80px;
+}
 
 
 /* = NavBar
@@ -233,6 +236,11 @@ button{
 
 
 
+/* iFrame */
+
+iframe{
+	border:0;
+}
 
 
 /* ScrollToTop button */
