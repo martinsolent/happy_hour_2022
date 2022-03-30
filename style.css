@@ -139,6 +139,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Row Margin Offsets */
 
+.voffset{
+	margin-top:30px;
+}
 .voffset-md{
 	margin-top:50px;
 }
@@ -236,11 +239,6 @@ button{
 
 
 
-/* iFrame */
-
-iframe{
-	border:0;
-}
 
 
 /* ScrollToTop button */
@@ -401,6 +399,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .btn-style{
 	width:100%;
+}
+.p-bloc-6-style{
+	width:82.82%;
+}
+.btn-button-style{
+	width:74.29%;
+}
+.btn-bloc-6-style{
+	width:74.6%;
 }
 
 /* = Colour
