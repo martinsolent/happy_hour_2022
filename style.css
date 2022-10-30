@@ -148,14 +148,17 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset-lg{
 	margin-top:80px;
 }
+/* Dividers */
+
+.b-divider{
+	border-top:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
 
 
 /* = NavBar
 -------------------------------------------------------------- */
 
-.navbar-dark .nav .dropdown-menu .nav-link{
-	color: rgb(64, 64, 64);
-}
 /* Handle Multi Level Navigation */
 .dropdown-menu .dropdown-menu{
 	border:none}
@@ -187,6 +190,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -209,6 +216,10 @@ button{
 	outline: none!important;
 }
 
+.dropdown a .caret{
+	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
+	padding: 3px 20px;
+}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -267,6 +278,11 @@ button{
 	stroke-linecap:round;
 }
 
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -276,9 +292,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .container{
 	max-width:1170px;
-}
-.img-style{
-	height:268px;
 }
 .img-4-style{
 	height:219px;
@@ -321,7 +334,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .link-style{
 	font-family:"Open Sans";
-	font-weight:400;
+	font-weight:normal;
+	font-size:28px;
+	line-height:32px;
 }
 .p-bloc-2-style{
 	font-family:"Open Sans";
@@ -409,22 +424,31 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .btn-bloc-6-style{
 	width:74.6%;
 }
+.link-home-style{
+	width:100%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-black{
-	background-color:#000000;
-}
 .bgc-ferrari-red{
 	background-color:#FF2600;
+}
+.bgc-white{
+	background-color:#FFFFFF;
+}
+.bgc-black{
+	background-color:#000000;
 }
 
 /* Text colour styles */
 
 .tc-black{
+	color:#000000!important;
+}
+.tc-black-2{
 	color:#000000!important;
 }
 
@@ -438,14 +462,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background:#cc1e00!important;
 	color:#FFFFFF!important;
 }
+.btn-ferrari-red-2{
+	background:#FF2600;
+	color:#FFFFFF!important;
+}
+.btn-ferrari-red-2:hover{
+	background:#cc1e00!important;
+	color:#FFFFFF!important;
+}
 
 /* Link colour styles */
 
-.ltc-white{
-	color:#FFFFFF!important;
+.ltc-black{
+	color:#000000!important;
 }
-.ltc-white:hover{
-	color:#cccccc!important;
+.ltc-black:hover{
+	color:#000000!important;
+}
+.ltc-azure{
+	color:#0096FF!important;
+}
+.ltc-azure:hover{
+	color:#0078cc!important;
 }
 
 /* Icon colour styles */
@@ -580,11 +618,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 
 @media (max-width: 575px){
-	.img-style{
-		width:253px;
-		height:253px;
-		border-radius:0px 0px 0px 0px;
-	}
 	.img-4-style{
 		width:253px;
 		height:253px;
