@@ -50,11 +50,28 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-lg{
 	padding:100px 20px;
 }
-.bloc-md{
-	padding:50px 20px;
-}
 .bloc-sm{
 	padding:20px;
+}
+
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .row{
+	margin-left:0;
+	margin-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
 }
 
 
@@ -190,6 +207,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -237,9 +257,6 @@ button{
 -------------------------------------------------------------- */
 .icon-md{
 	font-size:30px!important;
-}
-.icon-xl{
-	font-size:100px!important;
 }
 
 
@@ -385,14 +402,20 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-9-style{
 	font-family:"Open Sans";
 	font-weight:400;
+	font-size:20px;
+	line-height:28px;
 }
 .p-10-style{
 	font-family:"Open Sans";
 	font-weight:400;
+	font-size:20px;
+	line-height:28px;
 }
 .p-11-style{
 	font-family:"Open Sans";
 	font-weight:400;
+	font-size:20px;
+	line-height:28px;
 }
 .p-12-style{
 	font-family:"Open Sans";
@@ -439,6 +462,34 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .link-home-style{
 	width:100%;
 }
+.p-10450-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-35225-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-bloc-3-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-bloc-30-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-bloc-31-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-99-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-100-style{
+	font-size:20px;
+	line-height:28px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -450,9 +501,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bgc-white{
 	background-color:#FFFFFF;
-}
-.bgc-black{
-	background-color:#000000;
 }
 
 /* Text colour styles */
@@ -496,13 +544,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .ltc-azure:hover{
 	color:#0078cc!important;
-}
-
-/* Icon colour styles */
-
-.icon-white{
-	color:#FFFFFF!important;
-	border-color:#FFFFFF!important;
 }
 
 /* Bloc image backgrounds */
