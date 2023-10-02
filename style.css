@@ -490,6 +490,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:20px;
 	line-height:28px;
 }
+.p-98-style{
+	font-size:20px;
+	line-height:28px;
+}
+.p-102-style{
+	font-size:20px;
+	line-height:28px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -501,6 +509,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bgc-white{
 	background-color:#FFFFFF;
+}
+.bgc-black{
+	background-color:#000000;
 }
 
 /* Text colour styles */
@@ -544,6 +555,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .ltc-azure:hover{
 	color:#0078cc!important;
+}
+
+/* Icon colour styles */
+
+.icon-white{
+	color:#FFFFFF!important;
+	border-color:#FFFFFF!important;
 }
 
 /* Bloc image backgrounds */
@@ -700,6 +718,45 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.img-7-style{
 		height:268px;
+	}
+	.p-98-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.p-bloc-30-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.h2-style{
+		font-size:14px;
+	}
+	.p-bloc-31-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.p-99-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.p-100-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.p-bloc-29-style{
+		font-size:12px;
+		line-height:16px;
+	}
+	.h1-bloc-29-style{
+		font-size:22px;
+		line-height:26px;
+	}
+	.p-102-style{
+		font-size:16px;
+		line-height:22px;
+	}
+	.h2-28-style{
+		font-size:26px;
+		line-height:30px;
 	}
 	
 	/* Mobile Row Margin Offsets */
