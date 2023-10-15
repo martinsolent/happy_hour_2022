@@ -498,6 +498,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:20px;
 	line-height:28px;
 }
+.p-bloc-33-style{
+	font-size:22px;
+	line-height:28px;
+}
+.p-31049-style{
+	font-size:20px;
+	line-height:28px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -521,6 +529,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .tc-black-2{
 	color:#000000!important;
+}
+.tc-white{
+	color:#FFFFFF!important;
 }
 
 /* Button colour styles */
@@ -753,10 +764,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.p-102-style{
 		font-size:16px;
 		line-height:22px;
-	}
-	.h2-28-style{
-		font-size:26px;
-		line-height:30px;
 	}
 	
 	/* Mobile Row Margin Offsets */
