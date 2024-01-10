@@ -248,10 +248,6 @@ button{
 	outline: none!important;
 }
 
-.dropdown a .caret{
-	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
-	padding: 3px 20px;
-}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -503,8 +499,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	line-height:28px;
 }
 .p-31049-style{
+	font-size:22px;
+	line-height:30px;
+}
+.img-style{
+	width:1156px;
+}
+.p-bloc-32-style{
 	font-size:20px;
 	line-height:28px;
+}
+.h1-bloc-32-style{
+	font-family:"Open Sans";
+	font-weight:600;
 }
 
 /* = Colour
