@@ -16,6 +16,10 @@ body{
 .page-container{overflow: hidden;} /* Prevents unwanted scroll space when scroll FX used. */
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent blue selection glow on Chrome and Safari */
 a:hover{text-decoration: none; cursor:pointer;}
+.scroll-fx-lock-init{position:fixed!important;top: 0;bottom: 0;left: :0;right: 0;z-index:99999;} /* ScrollFX Lock */
+.blocs-grid-container{display: grid!important;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto;column-gap: 1.5rem;row-gap: 1.5rem;} /* CSS Grid */
+nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downdown Menu Link Color in Navigation */
+[data-bs-theme="dark"] nav .dropdown-menu .nav-link{color:var(--bs-dropdown-link-color)!important;} /* Maintain Downdown Menu Link Color in Navigation in Darkmode */
 
 
 /* Preloader */
@@ -176,6 +180,39 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = NavBar
 -------------------------------------------------------------- */
 
+/* Navbar Icon */
+.svg-menu-icon{
+	fill: none;
+	stroke: rgba(0,0,0,0.5);
+	stroke-width: 2px;
+	fill-rule: evenodd;
+}
+.navbar-dark .svg-menu-icon{
+	stroke: rgba(255,255,255,0.5);
+}
+.menu-icon-thin-bars{
+	stroke-width: 1px;
+}
+.menu-icon-thick-bars{
+	stroke-width: 5px;
+}
+.menu-icon-rounded-bars{
+	stroke-width: 3px;
+	stroke-linecap: round;
+}
+.menu-icon-filled{
+	fill: rgba(0,0,0,0.5);
+	stroke-width: 0px;
+}
+.navbar-dark .menu-icon-filled{
+	fill: rgba(255,255,255,0.5);
+}
+.navbar-toggler-icon{
+	background: none!important;
+	pointer-events: none;
+	width: 33px;
+	height: 33px;
+}
 /* Handle Multi Level Navigation */
 .dropdown-menu .dropdown-menu{
 	border:none}
@@ -259,6 +296,11 @@ button{
 	font-size:30px!important;
 }
 
+/*  Image Scale */
+.img-fluid-up{
+	min-width: 100%;
+	height: auto;
+}
 
 
 
@@ -517,73 +559,102 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Open Sans";
 	font-weight:600;
 }
+.img-data-man-style{
+	height:268px;
+}
+.img-bloc-32-style{
+	height:600px;
+	width:600px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Swatch Variables */
+:root{
+	
+	--swatch-var-564:rgba(255,38,0,1.0);
+	
+	--swatch-var-7781:rgba(0,0,0,1.0);
+	
+	--swatch-var-4057:rgba(255,255,255,1.0);
+	
+	--swatch-var-1339:#4E8F00;
+	
+	--swatch-var-7912:#FF2600;
+	
+	--swatch-var-4845:#000000;
+	
+	--swatch-var-2:#FFFFFF;
+	
+	--swatch-var-133:#0096FF;
+	
+}
+
+
 /* Background colour styles */
 
-.bgc-ferrari-red{
-	background-color:#FF2600;
+.bgc-7912{
+	background-color:var(--swatch-var-7912);
 }
-.bgc-white{
-	background-color:#FFFFFF;
+.bgc-2{
+	background-color:var(--swatch-var-2);
 }
-.bgc-black{
-	background-color:#000000;
+.bgc-7781{
+	background-color:var(--swatch-var-7781);
 }
 
 /* Text colour styles */
 
-.tc-black{
-	color:#000000!important;
+.tc-7781{
+	color:var(--swatch-var-7781)!important;
 }
-.tc-black-2{
-	color:#000000!important;
+.tc-4845{
+	color:var(--swatch-var-4845)!important;
 }
-.tc-white{
-	color:#FFFFFF!important;
+.tc-4057{
+	color:var(--swatch-var-4057)!important;
 }
 
 /* Button colour styles */
 
-.btn-ferrari-red{
-	background:#FF2600;
+.btn-c-564{
+	background:var(--swatch-var-564);
 	color:#FFFFFF!important;
 }
-.btn-ferrari-red:hover{
-	background:#cc1e00!important;
+.btn-c-564:hover{
+	background:#CC0000!important;
 	color:#FFFFFF!important;
 }
-.btn-ferrari-red-2{
-	background:#FF2600;
+.btn-c-7912{
+	background:var(--swatch-var-7912);
 	color:#FFFFFF!important;
 }
-.btn-ferrari-red-2:hover{
-	background:#cc1e00!important;
+.btn-c-7912:hover{
+	background:#CC0000!important;
 	color:#FFFFFF!important;
 }
 
 /* Link colour styles */
 
-.ltc-black{
+.ltc-7781{
+	color:var(--swatch-var-7781)!important;
+}
+.ltc-7781:hover{
 	color:#000000!important;
 }
-.ltc-black:hover{
-	color:#000000!important;
+.ltc-133{
+	color:var(--swatch-var-133)!important;
 }
-.ltc-azure{
-	color:#0096FF!important;
-}
-.ltc-azure:hover{
-	color:#0078cc!important;
+.ltc-133:hover{
+	color:#0063CC!important;
 }
 
 /* Icon colour styles */
 
-.icon-white{
-	color:#FFFFFF!important;
-	border-color:#FFFFFF!important;
+.icon-4057{
+	color:var(--swatch-var-4057)!important;
+	border-color:var(--swatch-var-4057)!important;
 }
 
 /* Bloc image backgrounds */
