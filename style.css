@@ -285,10 +285,6 @@ button{
 	outline: none!important;
 }
 
-.dropdown a .caret{
-	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
-	padding: 3px 20px;
-}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -564,7 +560,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .img-bloc-32-style{
 	height:600px;
-	width:600px;
+	width:1128px;
 }
 
 /* = Colour
