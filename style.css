@@ -348,6 +348,97 @@ button{
 	fill-rule: evenodd;
 	stroke-linecap:round;
 }
+/* = Lightbox
+-------------------------------------------------------------- */
+
+a[data-lightbox]{
+	position: relative;
+	display: block;
+	text-align: center;
+}
+a[data-lightbox]:hover::before{
+	content:"+";
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+	font-size:32px;
+	line-height: 42px;
+	width:50px;
+	height:50px;
+	margin-left:-25px;
+	border-radius: 50%;
+	background:rgba(0,0,0,.5);
+	color:#FFF;
+	font-weight:100;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+a[data-lightbox]:hover img{
+	opacity: 0.6;
+	-webkit-animation-fill-mode: none;
+	animation-fill-mode:none;
+}
+.lightbox-caption{
+	padding: 20px;
+	color: #FFF;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	bottom: 0px;
+}
+.close-lightbox:hover,.next-lightbox:hover, .prev-lightbox:hover{
+	background:rgba(0,0,0,.5);
+}
+.next-lightbox, .prev-lightbox,.close-lightbox{
+	position: absolute;
+	padding:6px;
+	background:rgba(0,0,0,.3);
+	line-height:0;
+	transition: background .2s ease-in-out;
+	border-radius:.25rem;
+	border:none;
+	z-index:20;
+}
+.next-lightbox, .prev-lightbox{
+	top:45%;
+}
+.close-lightbox{
+	top:20px;
+	right:20px;
+}
+.next-lightbox{
+	right:25px;
+}
+.prev-lightbox{
+	left:25px;
+}
+.lightbox-prev-icon,.lightbox-next-icon,.lightbox-close-icon{
+	fill:none;
+	stroke: #fff;
+	stroke-width: 3px;
+	fill-rule: evenodd;
+	stroke-linecap:round;
+}
+.lightbox-close-svg{
+	pointer-events:none;
+}
+
+/* Framless */
+.frameless-lb{
+	border-radius: 0;
+	border:none;
+}
+.frameless-lb .modal-body{
+	padding:0;
+}
+.frameless-lb .lightbox-caption{
+	left:0;
+	right:0;
+	bottom:-16px;
+}
 
 /* Hide Object */
 .object-hidden{
@@ -563,11 +654,33 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	height:268px;
 }
 .img-bloc-32-style{
-	height:600px;
-	width:1128px;
+	height:450px;
+	width:450px;
 }
 .img-17593352058-style{
-	width:631px;
+	width:450px;
+	height:450px;
+}
+.img-c-fi-style{
+	width:450px;
+}
+.img-ross-chapm-style{
+	width:450px;
+	height:450px;
+}
+.img-nick-style{
+	width:450px;
+}
+.img-16868480127-style{
+	width:450px;
+	height:450px;
+}
+.img-16712367550-style{
+	width:450px;
+	height:450px;
+}
+.img-117-style{
+	width:268px;
 }
 
 /* = Colour
